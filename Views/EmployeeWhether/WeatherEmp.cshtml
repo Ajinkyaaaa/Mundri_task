@@ -1,0 +1,12 @@
+﻿@model WeatherInfo
+
+@{
+    ViewData["Title"] = "Weather Information";
+}
+
+<h1>Weather Information</h1>
+
+<p>Temperature: @Model.Main.Temp °C</p>
+<p>Humidity: @Model.Main.Humidity %</p>
+<p>Wind Speed: @Model.Wind.Speed m/s</p>
+<p>Description: @Model.Weather.First().Description</p>
